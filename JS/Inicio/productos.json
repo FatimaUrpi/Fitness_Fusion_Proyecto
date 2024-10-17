@@ -1,0 +1,778 @@
+[
+    {
+        "id": 1,
+        "name": "CASACA NEGRA",
+        "price": 190,
+        "image": "./img/Hombres/casacas_Hombre/casacasHombre1.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Hombre"
+    },
+    {
+        "id": 2,
+        "name": "CASACA PLOMA",
+        "price": 80,
+        "image": "./img/Hombres/casacas_Hombre/casacasHombre2.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Hombre"
+    },
+    {
+        "id": 3,
+        "name": "CASACA NEGRA CON DOS LINEAS",
+        "price": 90,
+        "image": "./img/Hombres/casacas_Hombre/casacasHombre3.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Hombre"
+    },
+    {
+        "id": 4,
+        "name": "CASACA BICOLOR",
+        "price": 95,
+        "image": "./img/Hombres/casacas_Hombre/casacasHombre4.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Hombre"
+    },
+    {
+        "id": 5,
+        "name": "CASACA BLANCA",
+        "price": 85,
+        "image": "./img/Hombres/casacas_Hombre/casacasHombre5.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Hombre"
+    },
+    {
+        "id": 6,
+        "name": "CASACA TRICOLOR",
+        "price": 70,
+        "image": "./img/Hombres/casacas_Hombre/casacasHombre6.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Hombre"
+    },
+    {
+        "id": 7,
+        "name": "CASACA ESTAMPADO TROPICAL",
+        "price": 80,
+        "image": "./img/Hombres/casacas_Hombre/casacasHombre7.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Hombre"
+    },
+    {
+        "id": 8,
+        "name": "CASACA NEUTRO",
+        "price": 95,
+        "image": "./img/Hombres/casacas_Hombre/casacasHombre8.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Hombre"
+    },
+    {
+        "id": 9,
+        "name": "CONJUNTO-CLARO",
+        "price": 120,
+        "image": "./img/Hombres/conjunto_Hombre/conjuntosHombre5.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "conjunto",
+        "genero": "Hombre"
+    },
+    {
+        "id": 10,
+        "name": "CONJUNTO-BICOLOR",
+        "price": 110,
+        "image": "./img/Hombres/conjunto_Hombre/conjuntosHombre6.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "conjunto",
+        "genero": "Hombre"
+    },
+    {
+        "id": 11,
+        "name": "CONJUNTO GREEN-HIDEN",
+        "price": 90,
+        "image": "./img/Hombres/conjunto_Hombre/conjuntosHombre7.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "conjunto",
+        "genero": "Hombre"
+    },
+    {
+        "id": 12,
+        "name": "CONJUNTO-WHITE",
+        "price": 170,
+        "image": "./img/Hombres/conjunto_Hombre/conjuntosHombre8.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "conjunto",
+        "genero": "Hombre"
+    },
+    {
+        "id": 13,
+        "name": "POLERA ESTAMPADO DE NINTENDO",
+        "price": 80,
+        "image": "./img/Hombres/poleras_Hombre/polerasHombre1.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "polera",
+        "genero": "Hombre"
+    },
+    {
+        "id": 14,
+        "name": "POLERA ESTAMPADO DE LUNA",
+        "price": 70,
+        "image": "./img/Hombres/poleras_Hombre/polerasHombre2.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "polera",
+        "genero": "Hombre"
+    },
+    {
+        "id": 15,
+        "name": "POLERA FASES DE LA LUNA",
+        "price": 80,
+        "image": "./img/Hombres/poleras_Hombre/polerasHombre3.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "polera",
+        "genero": "Hombre"
+    },
+    {
+        "id": 16,
+        "name": "POLERA PINK",
+        "price": 75,
+        "image": "./img/Hombres/poleras_Hombre/polerasHombre4.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "polera",
+        "genero": "Hombre"
+    },
+    {
+        "id": 17,
+        "name": "POLERA BICOLOR",
+        "price": 85,
+        "image": "./img/Hombres/poleras_Hombre/polerasHombre5.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "polera",
+        "genero": "Hombre"
+    },
+    {
+        "id": 18,
+        "name": "POLERA ORANGE",
+        "price": 80,
+        "image": "./img/Hombres/poleras_Hombre/polerasHombre6.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "polera",
+        "genero": "Hombre"
+    },
+    {
+        "id": 19,
+        "name": "POLERA BLUE-BLUE",
+        "price": 90,
+        "image": "./img/Hombres/poleras_Hombre/polerasHombre7.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "polera",
+        "genero": "Hombre"
+    },
+    {
+        "id": 20,
+        "name": "POLERA GREEN",
+        "price": 75,
+        "image": "./img/Hombres/poleras_Hombre/polerasHombre8.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "polera",
+        "genero": "Hombre"
+    },
+    {
+        "id":21,
+        "name":"CASACA TRICOLOR",
+        "price": 190,
+        "image": "./img/Mujeres/casacas/casacasMujeres1.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Mujer"
+    },
+    {
+        "id":22,
+        "name":"CASACA BICOLOR",
+        "price": 80,
+        "image": "./img/Mujeres/casacas/casacasMujeres2.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Mujer"
+    },
+    {
+        "id":23,
+        "name":"CASACA BLANK-LEAD",
+        "price": 90,
+        "image": "./img/Mujeres/casacas/casacasMujeres3.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Mujer"
+    },
+    {
+        "id":24,
+        "name":"CASACA BICOLOR-SKY BLUE",
+        "price": 95,
+        "image": "./img/Mujeres/casacas/casacasMujeres4.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Mujer"
+    },
+    {
+        "id":25,
+        "name":"CASACA BLANK-LINEAS-WHITE",
+        "price": 85,
+        "image": "./img/Mujeres/casacas/casacasMujeres5.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Mujer"
+    },
+    {
+        "id":26,
+        "name":"CACASA BLANK-CLASICA",
+        "price": 70,
+        "image": "./img/Mujeres/casacas/casacasMujeres6.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Mujer"
+    },
+    {
+        "id":27,
+        "name":"CASACA RED-WHITE",
+        "price": 80,
+        "image": "./img/Mujeres/casacas/casacasMujeres7.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Mujer"
+    },
+    {
+        "id":28,
+        "name":"CASACA TRICOLOR-BLANK",
+        "price": 95,
+        "image": "./img/Mujeres/casacas/casacasMujeres8.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "casaca",
+        "genero": "Mujer"
+    },
+    {
+        "id":29,
+        "name":"CONJUNTO GREEN-WHITE",
+        "price": 150,
+        "image": "./img/Mujeres/conjuntos/conjuntosMujeres1.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "conjunto",
+        "genero": "Mujer"
+    },
+    {
+        "id": 30,
+        "name": "CONJUNTO BLANK-LEAD",
+        "price": 110,
+        "image": "./img/Mujeres/conjuntos/conjuntosMujeres2.png",
+        "categoria": "ropa_deportiva",
+        "tipo": "conjunto",
+        "genero": "Mujer"
+    },
+        {
+            "id": 31,
+            "name": "CONJUNTO-PINK",
+            "price": 120,
+            "image": "./img/Mujeres/conjuntos/conjuntosMujeres3.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "conjunto",
+            "genero": "Mujer"
+        },
+        {
+            "id": 32,
+            "name": "CONJUNTO SKY BLUE",
+            "price": 105,
+            "image": "./img/Mujeres/conjuntos/conjuntosMujeres4.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "conjunto",
+            "genero": "Mujer"
+        },
+        {
+            "id": 33,
+            "name": "CONJUNTO WHITE-SEA WATER",
+            "price": 115,
+            "image": "./img/Mujeres/conjuntos/conjuntosMujeres5.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "conjunto",
+            "genero": "Mujer"
+        },
+        {
+            "id": 34,
+            "name": "CONJUNTO CLASICO-LEAD",
+            "price": 70,
+            "image": "./img/Mujeres/conjuntos/conjuntosMujeres6.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "conjunto",
+            "genero": "Mujer"
+        },
+        {
+            "id": 35,
+            "name": "CONJUNTO GREEN",
+            "price": 80,
+            "image": "./img/Mujeres/conjuntos/conjuntosMujeres7.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "conjunto",
+            "genero": "Mujer"
+        },
+        {
+            "id": 36,
+            "name": "CONJUNTO BROWN",
+            "price": 95,
+            "image": "./img/Mujeres/conjuntos/conjuntosMujeres8.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "conjunto",
+            "genero": "Mujer"
+        },
+        {
+            "id": 37,
+            "name": "POLERA BLANK-WHITE",
+            "price": 80,
+            "image": "./img/Mujeres/poleras/polerasMujeres1.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "polera",
+            "genero": "Mujer"
+        },
+        {
+            "id": 38,
+            "name": "POLERA GREEN-WHITE",
+            "price": 70,
+            "image": "./img/Mujeres/poleras/polerasMujeres2.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "polera",
+            "genero": "Mujer"
+        },
+        {
+            "id": 39,
+            "name": "POLERA WHITE",
+            "price": 80,
+            "image": "./img/Mujeres/poleras/polerasMujeres3.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "polera",
+            "genero": "Mujer"
+        },
+        {
+            "id": 40,
+            "name": "POLERA WITE-BUTTERFLY",
+            "price": 75,
+            "image": "./img/Mujeres/poleras/polerasMujeres4.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "polera",
+            "genero": "Mujer"
+        },
+        {
+            "id": 41,
+            "name": "POLERA GREEN-WHITE",
+            "price": 85,
+            "image": "./img/Mujeres/poleras/polerasMujeres5.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "polera",
+            "genero": "Mujer"
+        },
+        {
+            "id": 42,
+            "name": "POLERA WHITE-LINEAS",
+            "price": 80,
+            "image": "./img/Mujeres/poleras/polerasMujeres6.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "polera",
+            "genero": "Mujer"
+        },
+        {
+            "id": 43,
+            "name": "POLERA PINK",
+            "price": 90,
+            "image": "./img/Mujeres/poleras/polerasMujeres7.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "polera",
+            "genero": "Mujer"
+        },
+        {
+            "id": 44,
+            "name": "POLERA BROWN",
+            "price": 75,
+            "image": "./img/Mujeres/poleras/polerasMujeres8.png",
+            "categoria": "ropa_deportiva",
+            "tipo": "polera",
+            "genero": "Mujer"
+        },
+        {
+            "id": 45,
+            "name": "CREATINA DORIAN YAMES",
+            "price": 90,
+            "image": "img/Suplementos-Inicio/Suplementos-Creatina/Suplemento-Creatina1.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Creatina"
+        },
+        {
+            "id": 46,
+            "name": "CREATINA MONOHIDRATADA 300GRM - ULTIMATE NUTRITION",
+            "price": 130,
+            "image": "img/Suplementos-Inicio/Suplementos-Creatina/Suplemento-Creatina2.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Creatina"
+        },
+        {
+            "id": 47,
+            "name": "CREATINA KEVIN LEVRONE",
+            "price": 119,
+            "image": "img/Suplementos-Inicio/Suplementos-Creatina/Suplemento-Creatina3.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Creatina"
+        },
+        {
+            "id": 48,
+            "name": "CREATINA MY PROTEIN",
+            "price": 90,
+            "image": "img/Suplementos-Inicio/Suplementos-Creatina/Suplemento-Creatina4.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Creatina"
+        },
+        {
+            "id": 49,
+            "name": "CREATINA MICRONIZADA POWDER 600GR",
+            "price": 269,
+            "image": "img/Suplementos-Inicio/Suplementos-Creatina/Suplemento-Creatina5.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Creatina"
+        },
+        {
+            "id": 50,
+            "name": "CREATINA MICRONIZADA POWDER 300GR",
+            "price": 139,
+            "image": "img/Suplementos-Inicio/Suplementos-Creatina/Suplemento-Creatina6.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Creatina"
+        },
+        {
+            "id": 51,
+            "name": "RAW EAA",
+            "price": 149,
+            "image": "img/Suplementos-Inicio/Suplementos-Creatina/Suplemento-Creatina7.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Creatina"
+        },
+        {
+            "id": 52,
+            "name": "C4 Extreme PRE WORKOUT",
+            "price": 159,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno1.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 53,
+            "name": "SHAABOOM PUMP",
+            "price": 109,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno2.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 54,
+            "name": "CLA MY PROTEIN",
+            "price": 60,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno3.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 55,
+            "name": "C4 ULTIMATE",
+            "price": 169,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno4.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 56,
+            "name": "ALPHAMINE",
+            "price": 159,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno5.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 57,
+            "name": "RAW PUMP NOM-STIM",
+            "price": 199,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno6.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 58,
+            "name": "TOTAL WAR",
+            "price": 159,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno7.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 59,
+            "name": "PSYCHOTIC - INSANE LABZ",
+            "price": 209,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno8.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 60,
+            "name": "PSYCHOTIC - INSANE LABZ",
+            "price": 159,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno9.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 61,
+            "name": "PSYCHOTIC - INSANE LABZ",
+            "price": 189,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno10.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 62,
+            "name": "PSYCHOTIC - INSANE LABZ",
+            "price": 229,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno11.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 63,
+            "name": "M6TEEN - 12X60ML - PRE ENTRENO LIQUIDO DY",
+            "price": 120,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno12.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 64,
+            "name": "BLOODS & GUTS",
+            "price": 130,
+            "image": "img/Suplementos-Inicio/Suplementos-PreEntreno/Suplemento-PreEntreno13.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Pre-Entreno"
+        },
+        {
+            "id": 65,
+            "name": "PROTEINA ISO XP",
+            "price": 199,
+            "image": "img/Suplementos-Inicio/Suplementos-Proteina/Suplemento-Proteina1.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Proteina"
+        },
+        {
+            "id": 66,
+            "name": "IMPACT WEY ISOLATE",
+            "price": 200,
+            "image": "img/Suplementos-Inicio/Suplementos-Proteina/Suplemento-Proteina2.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Proteina"
+        },
+        {
+            "id": 67,
+            "name": "PROTEÍNA NITROTECH",
+            "price": 169,
+            "image": "img/Suplementos-Inicio/Suplementos-Proteina/Suplemento-Proteina3.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Proteina"
+        },
+        {
+            "id": 68,
+            "name": "PROTEINA ISOLATE",
+            "price": 220,
+            "image": "img/Suplementos-Inicio/Suplementos-Proteina/Suplemento-Proteina4.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Proteina"
+        },
+        {
+            "id": 69,
+            "name": "ISO 100 HYDROLYZED",
+            "price": 290,
+            "image": "img/Suplementos-Inicio/Suplementos-Proteina/Suplemento-Proteina5.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Proteina"
+        },
+        {
+            "id": 70,
+            "name": "GOLD STANDARD 100% WHEY",
+            "price": 260,
+            "image": "img/Suplementos-Inicio/Suplementos-Proteina/Suplemento-Proteina6.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Proteina"
+        },
+        {
+            "id": 71,
+            "name": "CASEIN PROTEIN",
+            "price": 280,
+            "image": "img/Suplementos-Inicio/Suplementos-Proteina/Suplemento-Proteina7.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Proteina"
+        },
+        {
+            "id": 72,
+            "name": "NITRO-TECH 100% WHEY GOLD",
+            "price": 299,
+            "image": "img/Suplementos-Inicio/Suplementos-Proteina/Suplemento-Proteina8.jpg",
+            "categoria": "Suplementos",
+            "tipo": "Proteina"
+        },
+        {
+            "id":73,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"CALCIUM & MAGNESIUM - MY PROTEIN / 90 TABLETAS",
+            "price": 60,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas1.jpg"
+        },
+        {
+            "id":74,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"MAX MARINE OMEGA3",
+            "price": 90,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas2.jpg"
+        },
+        {
+            "id":75,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"FISH OIL OMEGA-3",
+            "price": 129,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas3.jpg"
+        },
+        {
+            "id":76,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"OXYGOLD",
+            "price": 119,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas4.jpg"
+        },
+        {
+            "id":77,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"PLATINUM MULTIVITAMIN",
+            "price": 48,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas5.jpg"
+        },
+        {
+            "id":78,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"MYPROTEIN ZINC 90 TABLETAS",
+            "price": 99,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas6.jpg"
+        },
+        {
+            "id":79,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"CALCIUM & MAGNESIUM - MY PROTEIN / 90 TABLETAS + MY PROTEIN ZINC 90 TABLETAS",
+            "price": 150,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas7.jpg"
+        },
+        {
+            "id":80,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"CALCIUM & MAGNESIUM - MY PROTEIN + MY PROTEIN ZINC 90 TABLETAS + MAX MARINE OMEGA3",
+            "price": 60,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas8.jpg"
+        },
+        {
+            "id":81,
+            "categoria": "Suplementos",
+            "tipo": "Vitamina",
+            "name":"OPTI - MEN",
+            "price": 169,
+            "image": "img/Suplementos-Inicio/Suplementos-Vitaminas/Suplemento-vitaminas9.jpg"
+        },
+    
+           {
+        "id": 82,
+        "name": "Pulsera de GYM",
+        "price": 10,
+        "image": "./img/Accesorios/accesorios1.jpg",
+        "categoria": "Accesorios",
+        "tipo": "Pulsera"
+    },
+    {
+        "id": 83,
+        "name": "Collar con Forma de Disco de GYM",
+        "price": 15,
+        "image": "./img/Accesorios/accesorios2.jpg",
+        "categoria": "Accesorios",
+        "tipo": "collar"
+    },
+    {
+        "id": 84,
+        "name": "Collar con Forma de Mancuerna de GYM",
+        "price": 15,
+        "image": "./img/Accesorios/accesorios3.jpg",
+        "categoria": "Accesorios",
+        "tipo": "collar"
+    },
+    {
+        "id": 85,
+        "name": "Straps para levatamineto pesado",
+        "price": 10,
+        "image": "./img/Accesorios/accesorios4.jpg",
+        "categoria": "Accesorios",
+        "tipo": "Pulsera"
+    },
+    {
+        "id": 86,
+        "name": "Neck Shoulders",
+        "price": 30,
+        "image": "./img/Accesorios/accesorios5.jpg",
+        "categoria": "Accesorios",
+        "tipo": "Almuadillas"
+    },
+    {
+        "id": 87,
+        "name": "Muñequeras",
+        "price": 35,
+        "image": "./img/Accesorios/accesorios6.jpg",
+        "categoria": "Accesorios",
+        "tipo": "Muñequera"
+    },
+    {
+        "id": 88,
+        "name": "Muñequeras con Diseño Animado",
+        "price": 50,
+        "image": "./img/Accesorios/accesorios7.jpg",
+        "categoria": "Accesorios",
+        "tipo": "Muñequera"
+    },
+    {
+        "id": 89,
+        "name": "Cinturon de cuero para GYM",
+        "price": 99,
+        "image": "./img/Accesorios/accesorios8.jpg",
+        "categoria": "Accesorios",
+        "tipo": "Cinturon"
+    },
+    {
+        "id": 90,
+        "name": "Cinturon con Diseño de cuero de GYM",
+        "price": 180,
+        "image": "./img/Accesorios/accesorios9.jpg",
+        "categoria": "Accesorios",
+        "tipo": "Cinturon"
+    }
+]
+
+
+
+
+
+
+        
+
+     
+        
+        

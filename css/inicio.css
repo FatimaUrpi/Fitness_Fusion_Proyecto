@@ -1,0 +1,126 @@
+nav {
+    display: flex; /* Convertir los elementos en un contenedor flexible */
+    flex-direction: row; /* Opcional: mostrar elementos en fila (valor por defecto) */
+    justify-content: space-around; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.listRopaDeportiva .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listRopaDeportiva{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.listRopaDeportiva .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listRopaDeportiva .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listRopaDeportiva .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listRopaDeportiva .item button{
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*CASACAS*/
+.listSuplementos .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listSuplementos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.listSuplementos .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listSuplementos .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listSuplementos .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listSuplementos .item button{
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*CONJUNTOS*/
+.listAccesoriosInicio .item img {
+    width: 100%;
+    filter: drop-shadow(0 10px 20px rgba(153, 152, 152, 0.6));
+}
+.listAccesoriosInicio{
+    display: grid;  
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.listAccesoriosInicio .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listAccesoriosInicio .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listAccesoriosInicio .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listAccesoriosInicio .item button{
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}

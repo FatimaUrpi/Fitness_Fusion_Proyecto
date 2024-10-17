@@ -1,0 +1,550 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* BARRA DE MENÚ */
+header {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: #fff;
+    transition: background-color 0.15s ease;
+}
+header:hover {
+    background-color: #fff; 
+}
+header:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity 0.10s ease;
+}
+header:hover nav a {
+    color: black;
+}
+nav {
+    display: flex; /* Convertir los elementos en un contenedor flexible */
+    flex-direction: row; /* Opcional: mostrar elementos en fila (valor por defecto) */
+    justify-content: space-around; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+nav a {
+    color: black;
+    display: inline-block;
+    padding: 20px 30px;
+    line-height: 1;
+    text-decoration: none; 
+    text-align: center;   
+}
+.carrito {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: -10px;
+
+}
+.user {
+    margin-left: 20px;
+    margin-right: 100px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: -10px; 
+
+}
+.Logo {
+    margin-right: 120px;
+    width: 40px; 
+    height: 40px;
+    float: left; 
+}
+.Logo img{
+    width: 180px;
+    height: auto;
+    margin-top: -80px; 
+   
+}
+
+
+/*ENVIOS*/
+/*MARQUEE -barrita negra de envios gratis */
+.marquee-space {
+    height: 20px;
+}
+.marquee {
+    margin-top: 156px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: black;
+    width: 100%;
+}
+.marquee-text {
+    display: inline-block;
+    margin-left: 2px;
+    animation: marquee-scroll var(--duration, 7s) linear infinite;
+    color: #fff;
+}
+.marquee-text:after {
+    content: " 📦 Envíos GRATIS  ";
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(2%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/**/
+main {
+    padding: 0 5rem;
+
+}
+
+/*FOOTER*/
+
+/*FOOTER*/
+footer {
+
+    height: 445px;
+    margin-top: 3%;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+.footer-column {
+    margin-right: 40px;
+    flex: 1;
+}
+
+.footer-column h4 {
+    text-align: left;
+    padding-bottom: 10px;
+    margin-bottom: 10px; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.social-icons span {
+    border-radius: 45%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons span i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00acee;
+}
+
+.youtube {
+    background-color: #c4302b;
+}
+
+.pinterest {
+    background-color: #c8232c;
+}
+
+.instagram {
+    background: linear-gradient(
+        #405de6,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #fcaf45
+    );
+}
+
+/* Ajustes de estilo para el copyright dentro del footer */
+.footer-content {
+   margin: 20px;
+}
+
+.footer-content .copyright {
+
+    position: absolute;
+    text-align: center;
+    bottom: 20;
+    left: 0;
+    width:1280px;
+    border-top: 1px solid #d2b495;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.footer-content .copyright p {
+    font-weight: 400;
+    font-size: 1.2rem; 
+}
+
+
+
+/* SLIDER*/
+.anuncio {
+    width: 100%;
+    height: 520px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 180px;
+    margin-bottom: 50px;
+
+}
+
+.anuncio img {
+    width: 100%;
+    height: 520px;
+
+}
+
+
+/*PRODUCTOS*/
+
+.listProduct .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProduct .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.product {
+    margin: 50px 30px;
+}
+
+/* SLIDER*/
+.anuncio {
+    width: 100%;
+    height: 520px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 180px;
+    margin-bottom: 50px;
+
+}
+
+.anuncio img {
+    width: 100%;
+    height: 520px;
+
+}
+
+
+/*ropa*/
+
+/*PRODUCTOS HOMBRES*/
+/*poleras*/
+
+.listProductPolerasHombre .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProductPolerasHombre {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProductPolerasHombre .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listProductPolerasHombre .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProductPolerasHombre .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProductPolerasHombre .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*CASACAS*/
+.listProductCasacasHombre .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProductCasacasHombre {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProductCasacasHombre .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listProductCasacasHombre .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProductCasacasHombre .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProductCasacasHombre .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*CONJUNTOS*/
+.listProductConjuntosHombre .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProductConjuntosHombre {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProductConjuntosHombre .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listProductConjuntosHombre .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProductConjuntosHombre .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProductConjuntosHombre .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*MUJERES PRODUCTOS --------------------------------------------------------------------*/
+/*poleras*/
+
+.listProductPolerasMujeres .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProductPolerasMujeres {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProductPolerasMujeres .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listProductPolerasMujeres .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProductPolerasMujeres .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProductPolerasMujeres .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*CASACAS*/
+.listProductCasacasMujeres .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProductCasacasMujeres {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProductCasacasMujeres .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listProductCasacasMujeres .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProductCasacasMujeres .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProductCasacasMujeres .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*CONJUNTOS*/
+.listProductConjuntosMujeres .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProductConjuntosMujeres {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProductConjuntosMujeres .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listProductConjuntosMujeres .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProductConjuntosMujeres .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProductConjuntosMujeres .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+

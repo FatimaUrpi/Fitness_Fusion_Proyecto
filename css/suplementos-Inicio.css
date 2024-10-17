@@ -1,0 +1,362 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* BARRA DE MENÚ */
+header {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: #fff;
+    transition: background-color 0.15s ease;
+
+}
+
+header:hover {
+    background-color: #fff;
+}
+
+header:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity 0.10s ease;
+}
+
+header nav a {
+    color: rgb(0, 0, 0);
+}
+
+
+header:hover nav a {
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #063970;
+    /* Color al pasar el mouse */
+    font-weight: bold;
+    /* Hacer el texto más grueso */
+
+}
+
+
+
+header nav {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+nav {
+    display: flex; /* Convertir los elementos en un contenedor flexible */
+    flex-direction: row; /* Opcional: mostrar elementos en fila (valor por defecto) */
+    justify-content: space-around; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+nav a {
+    color: black;
+    display: inline-block;
+    padding: 20px 30px;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+.Logo {
+    margin-right: 120px;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.Logo img {
+    width: 180px;
+    height: auto;
+    margin-top: -80px;
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 10000;
+    /* Ajusta el valor según sea necesario */
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: max-content; /* Cambiamos esto */
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block; /* Cambiamos esto */
+    opacity: 0.5; /* Opacidad predeterminada */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.dropdown-content a:hover {
+    opacity: 1;
+    /* Opacidad al pasar el mouse */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffffff;
+}
+
+
+/*MARQUEE -barrita negra de envios gratis */
+.marquee-space {
+    height: 20px;
+}
+
+.marquee {
+    margin-top: 156px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: black;
+    width: 100%;
+}
+
+.marquee-text {
+    display: inline-block;
+    margin-left: 2px;
+    animation: marquee-scroll var(--duration, 7s) linear infinite;
+    color: #fff;
+
+}
+
+
+
+
+.marquee-text:after {
+    content: "📦 Envíos GRATIS  ";
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(2%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/**/
+
+.carrito {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: -10px;
+
+}
+
+.user {
+    margin-left: 20px;
+    margin-right: 100px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: -10px;
+
+}
+
+
+ 
+
+main {
+    padding: 0 5rem;
+}
+
+
+
+.top-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 200px;  
+}
+
+.container-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+   
+}
+
+.card-category {
+    height: 40ch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    
+}
+
+.category-creatina {
+    background-image: url('../img/Suplementos-Inicio/Creatina-Categoria.jpg');
+    background-position: bottom;
+    background-size: cover;   
+    cursor: pointer;
+}
+.link-category {
+    color: black; /* Color predeterminado para los enlaces */
+    text-decoration: none; /* Quita la subrayado predeterminado */
+}
+
+.link-category:hover {
+    color: black; /* Cambia el color al pasar el cursor */
+}
+
+.link-category:visited {
+    color: black; /* Color para los enlaces visitados */
+}
+
+.category-proteina {
+    background-image: url('../img/Suplementos-Inicio/Proteina-Categoria.jpg');
+    background-position: bottom;
+    background-size: cover;   
+}
+.category-preEntreno {
+    background-image: url('../img/Suplementos-Inicio/PreEntreno-Categoria.jpg');
+    background-position: bottom;
+    background-size: cover;   
+}
+.category-vitaminas {
+    background-image: url('../img/Suplementos-Inicio/Vitaminas-Categoria.jpg');
+    background-position: bottom;
+    background-size: cover;   
+}
+
+.info{
+    padding: 30px 5vw;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(178, 178, 178);
+    border-radius: 20px;
+}
+
+.info-img{
+    max-width: 100%;
+    height: auto;
+}
+.info-img img{
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+}
+.info-txt {
+    width: 50%;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.info-txt h2{
+    font-size: 45px;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+
+.listProduct .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.listProduct .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.product {
+    margin: 50px 30px;
+}

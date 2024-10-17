@@ -1,0 +1,97 @@
+/*FOOTER*/
+footer {
+
+    height: 380px;
+    margin-top: 3%;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+.footer-column {
+    margin-right: 40px;
+    flex: 1;
+}
+/*Fatimasssssss*/
+
+.footer-column h4 {
+    text-align: left;
+    padding-bottom: 10px;
+    margin-bottom: 10px; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.8rem;
+    cursor: pointer;
+}
+
+.social-icons span {
+    border-radius: 45%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons span i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00acee;
+}
+
+.youtube {
+    background-color: #c4302b;
+}
+
+.pinterest {
+    background-color: #c8232c;
+}
+
+.instagram {
+    background: linear-gradient(
+        #405de6,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #fcaf45
+    );
+}
+
+/* Ajustes de estilo para el copyright dentro del footer */
+.footer-content {
+   margin: 20px;
+}
+
+.footer-content .copyright {
+
+    position: absolute;
+    text-align: center;
+    bottom: 20;
+    left: 0;
+   /* width:214ch;*/
+    width: 97%;
+
+    border-top: 1px solid #d2b495;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.footer-content .copyright p {
+    font-weight: 400;
+    font-size: 1.2rem; 
+}

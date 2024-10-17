@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INICIO</title>
+
+
+    <!-- CSS -->
+    <link href="css/inicio.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://kit.fontawesome.com/9e8733e006.js" crossorigin="anonymous"></script>
+
+
+    <!-- SLIDER -->
+    <script src="./JS/sliders.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="Index.html" class="Logo"><img src="img/logo1.jpg" alt=""></a>
+           
+          <a href="./hombres-RopaDeportiva.html">HOMBRES</a>
+           <a href="./Mujeres-RopaDeportiva.html">MUJERES</a>
+            <div class="dropdown">
+                <a href="./suplementos-Inicio.html">SUPLEMENTOS</a>
+                <div class="dropdown-content">
+                    <a href="./suplementos-Creatina.html">Creatina</a>
+                    <a href="./suplementos-PreEntreno.html">PreEntreno</a>
+                    <a href="./suplementos-Proteina.html">Proteína</a>
+                    <a href="./suplementos-Vitaminas.html">Vitaminas</a>
+                </div>
+            </div>
+        
+            <a href="accesorios.html">ACCESORIOS</a> 
+            <a href="iniciarSesion.html" class="user"><img src="img/user.png" alt=""></a>
+
+            <div class="iconCart">
+                <img src="img/carrito.png">
+                <div class="totalQuantity">0</div>
+            </div>
+  </nav>
+
+        
+        <div class="marquee-space"></div>
+        <div class="marquee">
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+        </div>
+    </header>
+      
+    <!-- SLIDER -->
+    <div class="anuncio">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/banner1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/banner2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/banner3.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="product container">
+        <CENTER>
+            <h1>Ropa Deportiva</h1>
+        </CENTER>
+        <br>
+        <div class="listRopaDeportiva">
+            <!-- Aquí se mostrarán los productos de ropa deportiva -->
+        </div>
+        <br>
+        <br>
+        <button class="buttonSection" id="ver-mas-ropa-btn"> VER MÁS</button>
+        <div class="buttonOpcion" id="opciones-ropa" style="display: none;">
+            <button id="opcion-hombre">Hombre</button>
+            <button id="opcion-mujer">Mujer</button>
+        </div>
+    </section>
+
+    <section class="product container">
+        <CENTER>
+            <h1>Suplementos</h1>
+        </CENTER>
+        <br>
+        <div class="listSuplementos">
+            <div class="item">
+            </div>
+        </div>
+        <br>
+        <br>
+        <button class="buttonSection" id="ver-mas-suplementos-btn"> VER MÁS</button>
+        <div class="buttonOpcion" id="opciones-suplementos" style="display: none;">
+            <button id="opcion-creatina">Creatina</button>
+            <button id="opcion-pre-entreno">Pre-Entreno</button>
+            <button id="opcion-proteina">Proteína</button>
+            <button id="opcion-vitaminas">Vitaminas</button>
+        </div>
+    </section>
+
+
+    <section class="product container">
+        <CENTER>
+            <h1>Accesorios</h1>
+        </CENTER>
+        <br>
+        <div class="listAccesoriosInicio">
+        </div>
+        <br>
+        <br>
+        <button class="buttonSection" id="ver-mas-accesorios"> VER MÁS</button>
+    </section>
+    
+
+
+
+    <footer class="d-flex">
+        <div class="footer-content">
+            <div class="footer-columns">
+                <div class="info-atencion footer-column">
+                    <h4>Información de Contacto</h4>
+                    <ul>
+                        <p>
+                            Dirección: Av. Los Olivos San Martín de Porres_Perú-Lima
+
+                        </p>
+                        <p>Teléfono: 123-456-7890</p>
+                        <p>Fax: 55555300</p>
+                        <p>EmaiL: grupofitnesfusion@gmail.com</p>
+                    </ul>
+                    <br>
+                    <br>
+            
+            
+                    <div class="social-icons">
+                        <span class="facebook" onclick="window.location.href='https://www.facebook.com/escueladfitness/'">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        
+                        <span class="twitter" onclick="window.location.href='https://twitter.com'">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        
+                        <span class="youtube" onclick="window.location.href='https://youtu.be/Ik2h80S3FmU?si=BE1n--BKAfnmShET'">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        
+                        <span class="pinterest" onclick="window.location.href='https://pin.it/6jKmuNpdl'">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        
+                        <span class="instagram" onclick="window.location.href='https://www.instagram.com/innovafit.mx/reel/C2C-kVqOz_K/'">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="info-atencion footer-column">
+                    <h4>Atención al cliente</h4>
+                    <p>Formas de pago</p>
+                    <p>Métodos de Envío</p>
+                    <p>Cambios & Devoluciones</p>
+                    <p>Guía de Tallas</p>
+                </div>
+                <div class="nosotros footer-column">
+                    <h4>Nosotros</h4>
+                    <p>Quienes somos</p>
+                    <p>Reviews de clientes</p>
+                    <p>Nuestras Tiendas</p>
+                    <p>Trabaja con nosotros</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    Desarrollado por estudiantes de Cibertec - Ciclo 4 &copy; 2024
+                </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="cart">
+        <h2>
+            CARRITO
+        </h2>
+        <div class="listCart">
+            <div class="item">
+                    
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="close">
+                CLOSE
+            </div>
+            <div class="checkout">
+                CHECKOUT
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/Carrito/carrito.js"></script>
+
+    <script src="./JS/Inicio/index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

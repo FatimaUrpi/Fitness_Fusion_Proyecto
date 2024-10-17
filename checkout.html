@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="checkoutLayout">
+
+
+            <div class="returnCart">
+                <a href="/">Seguir Comprando</a>
+                <h1>Tus productos</h1>
+                <div class="list">
+
+                    <div class="item">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <form id="inicioSesion-form">
+                <div class="right">
+                    <h1>Finaliza tu compra</h1>
+
+                    <div class="form">
+                        <div class="group">
+                            <label for="name">¿Quien va a recibir el pedido?</label>
+                            <input type="text" name="name" id="name" required="required">
+                        </div>
+
+                        <div class="group">
+                            <label for="phone">Celular</label>
+                            <input type="text" name="phone" id="phone" required="required">
+                        </div>
+
+                        <div class="group">
+                            <label for="address">Dirección</label>
+                            <input type="text" name="address" id="address" required="required">
+                        </div>
+
+                        <div class="group">
+                            <label for="country">Departamento</label>
+                            <select name="country" id="country" required="required">
+                                <option value="">Seleccione: </option>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Áncash">Áncash</option>
+                                <option value="Apurímac">Apurímac</option>
+                                <option value="Arequipa">Arequipa</option>
+                                <option value="Ayacucho">Ayacucho</option>
+                                <option value="Cajamarca">Cajamarca</option>
+                                <option value="Callao">Callao</option>
+                                <option value="Cusco">Cusco</option>
+                                <option value="Huancavelica">Huancavelica</option>
+                                <option value="Huánuco">Huánuco</option>
+                                <option value="Ica">Ica</option>
+                                <option value="Junín">Junín</option>
+                                <option value="La Libertad">La Libertad</option>
+                                <option value="Lambayeque">Lambayeque</option>
+                                <option value="Lima">Lima</option>
+                                <option value="Loreto">Loreto</option>
+                                <option value="Madre de Dios">Madre de Dios</option>
+                                <option value="Moquegua">Moquegua</option>
+                                <option value="Pasco">Pasco</option>
+                                <option value="Piura">Piura</option>
+                                <option value="Puno">Puno</option>
+                                <option value="San Martín">San Martín</option>
+                                <option value="Tacna">Tacna</option>
+                                <option value="Tumbes">Tumbes</option>
+                                <option value="Ucayali">Ucayali</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="return">
+                        <div class="row">
+                            <div>Cantidad</div>
+                            <div class="totalQuantity">70</div>
+                        </div>
+                        <div class="row">
+                            <div>Monto Total</div>
+                            <div class="totalPrice">$900</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="buttonCheckout">Pagar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="JS/checkout.js"></script>
+
+</body>
+
+</html>

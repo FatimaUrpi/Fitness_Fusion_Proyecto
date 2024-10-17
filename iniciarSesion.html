@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS FUSION-INICIAR SESION</title>
+    <link href="css/inicio.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/iniciarSesion.css">
+    <script src="https://kit.fontawesome.com/9e8733e006.js" crossorigin="anonymous"></script>
+
+    <!-- SLIDER -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./JS/Sesion/inciarSesion.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+   
+</head>
+
+<body>
+    <div class="modal-background"></div>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="Index.html" class="Logo"><img src="img/logo1.jpg" alt=""></a>
+           
+          <a href="./hombres-RopaDeportiva.html">HOMBRES</a>
+           <a href="./Mujeres-RopaDeportiva.html">MUJERES</a>
+            <div class="dropdown">
+                <a href="./suplementos-Inicio.html">SUPLEMENTOS</a>
+                <div class="dropdown-content">
+                    <a href="./suplementos-Creatina.html">Creatina</a>
+                    <a href="./suplementos-PreEntreno.html">PreEntreno</a>
+                    <a href="./suplementos-Proteina.html">Proteína</a>
+                    <a href="./suplementos-Vitaminas.html">Vitaminas</a>
+                </div>
+            </div>
+        
+            <a href="accesorios.html">ACCESORIOS</a> 
+            <a href="iniciarSesion.html" class="user"><img src="img/user.png" alt="" class="imgUser"></a>
+
+            <div class="iconCart">
+                <img src="img/carrito.png">
+                <div class="totalQuantity">0</div>
+            </div>
+        </nav>
+        
+        <div class="marquee-space"></div>
+        <div class="marquee">
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+            <span class="marquee-text" aria-hidden="true">📦 <span class="marquee--stencil-this">Envíos</span> GRATIS</span>
+        </div>
+    </header>
+
+    <main>
+        <section data-section-id="login" data-section-type="login">
+            <div class="Container"> 
+                <div class="redes">
+                    <div class="fb redes-btn">
+                        <a href="https://www.facebook.com/?locale=es_LA" title="Continuar con Facebook" aria-label="Continuar con Facebook" tabindex="0">
+                            <i class="fa-brands fa-facebook"></i><span>  Continuar con Facebook</span>
+                        </a>
+                    </div>
+                    <div class="google redes-btn">
+                        <a href="https://www.google.com/intl/es-419/gmail/about/" title="Continuar con Google" aria-label="Continuar con Google" tabindex="0">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="abcRioButtonSvg" style="vertical-align: middle;">
+                                <g>
+                                    <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                                    <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                                    <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                                    <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                                    <path fill="none" d="M0 0h48v48H0z"></path>
+                                </g>
+                            </svg><span>  Continuar con Google</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="form-inciar-sesion" id="incioSesion-form">
+                    <div class="titulo">
+                        <h2>Iniciar Sesión </h2>
+                        <p>Por favor ingrese su correo y contraseña:</p>
+                    </div>
+                    
+                        <div class="credenciales">
+                            <input type="email" name="correo" required="required" placeholder="Correo" autofocus="">
+                            <label>Correo</label>
+                        </div>
+                        <div class="credenciales">
+                            <input type="password" name="password" required="required" placeholder="Contraseña" id="passwordField">
+                            <span class="toggle-password" onclick="togglePasswordVisibility()">
+                                <i class="fas fa-eye"></i>
+                            </span>
+                            <label>Contraseña</label>
+                        </div>
+                        <button type="submit" class="boton-iniciar-sesion">Iniciar Sesión</button>
+                                    
+            
+                    <div class="crear-cuenta">
+                        <span class="Text--subdued">No tienes una cuenta?</span>
+                        <a href="./registrarse.html" class="Link Link--secondary">Crea una</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="d-flex">
+        <div class="footer-content">
+            <div class="footer-columns">
+                <div class="info-atencion footer-column">
+                    <h4>Información de Contacto</h4>
+                    <ul>
+                        <p>
+                            Dirección: Av. Los Olivos San Martín de Porres_Perú-Lima
+
+                        </p>
+                        <p>Teléfono: 123-456-7890</p>
+                        <p>Fax: 55555300</p>
+                        <p>EmaiL: grupofitnesfusion@gmail.com</p>
+                    </ul>
+                    <br>
+                    <br>
+            
+            
+                    <div class="social-icons">
+                        <span class="facebook" onclick="window.location.href='https://www.facebook.com/escueladfitness/'">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        
+                        <span class="twitter" onclick="window.location.href='https://twitter.com'">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        
+                        <span class="youtube" onclick="window.location.href='https://youtu.be/Ik2h80S3FmU?si=BE1n--BKAfnmShET'">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        
+                        <span class="pinterest" onclick="window.location.href='https://pin.it/6jKmuNpdl'">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        
+                        <span class="instagram" onclick="window.location.href='https://www.instagram.com/innovafit.mx/reel/C2C-kVqOz_K/'">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="info-atencion footer-column">
+                    <h4>Atención al cliente</h4>
+                    <p>Formas de pago</p>
+                    <p>Métodos de Envío</p>
+                    <p>Cambios & Devoluciones</p>
+                    <p>Guía de Tallas</p>
+                </div>
+                <div class="nosotros footer-column">
+                    <h4>Nosotros</h4>
+                    <p>Quienes somos</p>
+                    <p>Reviews de clientes</p>
+                    <p>Nuestras Tiendas</p>
+                    <p>Trabaja con nosotros</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    Desarrollado por estudiantes de Cibertec - Ciclo 4 &copy; 2024
+                </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <div class="cart">
+        <h2>
+            CARRITO
+        </h2>
+        <div class="listCart">
+            <div class="item">
+                    
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="close">
+                CLOSE
+            </div>
+            <div class="checkout">
+                CHECKOUT
+            </div>
+        </div>
+    </div>
+    <script src="./JS/Carrito/carrito.js"></script>
+</body>
+
+</html>
