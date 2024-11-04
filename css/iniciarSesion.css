@@ -1,171 +1,203 @@
-main {
-    margin-top: 180px;
-    background-color: #e2e2e2; /* Cambia el color de fondo según sea necesario */
-    padding: 20px;
-}
-
-.redes{
-    background-color: #e2e2e2;
-}
-
-.fb,
-.google {
-    text-align: center;
-}
-
-.fb a,
-.google a {
-    margin-top: 15px;
-    margin-bottom: 10px; 
-    display: flex; 
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.fb span,
-.google span{
-    width: 58%;
-    font-size: 15px;
-    padding: 0 2px;
-    line-height: initial;
-}
-
-.fb i{
-    margin-right: 30px;
-    display: inline-block;
-    line-height: inherit;
-}
-
-.google svg {
-    margin-right: 40px;
-}
-
-.fb.redes-btn a{
-    margin-top: 60px;
-    background-color: #ffffff; 
-    color: #1877f2 ; 
-    text-decoration: none; 
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0); /* Inicialmente, la sombra está oculta */
-    transition: box-shadow 0.3s; 
-}
-
-.google.redes-btn a{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    background-color: #ffffff; 
-    text-decoration: none; 
-    color: black;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0); /* Inicialmente, la sombra está oculta */
-    transition: box-shadow 0.3s; 
-}
-
-.fb.redes-btn a:hover,
-.google.redes-btn a:hover {
-    box-shadow: 
-    0 0 10px rgba(0, 0, 0, 0.3), /* Sombra difuminada hacia adentro */
-    0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.redes-btn a {
-    cursor: pointer;
-    display: inline-block; /* Convierte los enlaces en elementos de bloque */
-    text-align: center; /* Centra el texto dentro de los botones */
-    padding: 10px 20px; /* Ajusta el relleno del botón */
-    border-radius: 5px; /* Agrega bordes redondeados */
-    border: 1px solid transparent; /* Agrega un borde transparente */
-    width: 350px;
-}
-
-.Container {
-    max-width: 500px; /* Establece el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
-
-.form-registro,
-.form-inciar-sesion {
-    text-align: center; /* Centra el contenido del formulario horizontalmente */
-}
-
-.titulo {
-    margin-top: 30px;
-    margin-bottom: 20px; 
-    height: 100px;
-    background-color: #e2e2e2;
-    width: 100%; /* Mantenemos el ancho al 100% */
-    height: 100px; /* Altura original */
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .login-container {
+    max-width: 350px;
+    width: 90%;
+    padding: 20px;
     text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header with back button */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    top: 0;
-    left: 0;
-    right: 0; /* Ajustamos el ancho */
-}
-
-.credenciales {
     margin-bottom: 20px;
-    position: relative; 
-}
-
-.credenciales input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-}
-
-.credenciales input:focus {
-    outline: none;
-    border-color: #007bff; /* Cambia el color del borde al enfocar */
-}
-
-/* Estilos para las etiquetas de las cajas de texto */
-.credenciales label {
+  }
+  
+  .back-btn {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    transition: all 0.3s ease;
-    pointer-events: none;
-    color: transparent; /* Color del texto de la etiqueta */
-}
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 19px;
+    margin: 0;
+    padding: 5px 10px;
+    color: #545151;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #d3d3d3;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 80px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    color: #9b27b0;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .input-container {
+    position: relative;
+    margin: 1.5rem 0;
+  }
 
-.toggle-password {
+
+.input-container input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    font-size: 0.85rem;
+    background-color: #ffffff;
+    padding: 0 0.25rem;
+    color: #666;
+  }
+  
+  .toggle-password {
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 1rem;
     transform: translateY(-50%);
     cursor: pointer;
-}
-
-.toggle-password i {
     color: #666;
+  }
+  
+  .input-container input[type="text"],
+  .input-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    margin: 2px 0;
+  }
+
+  .input-container label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 12px;
+    color: #aaa;
+    pointer-events: none;
+    opacity: 0; /* Oculto inicialmente */
+    transition: 0.3s ease all;
+    background: white; /* Fondo blanco para que quede encima del borde */
+    padding: 0 4px;
+  }
+
+/* Efecto cuando el input está enfocado */
+.input-container input:focus + label {
+    top: -10px; /* Ajusta la posición del label encima del borde */
+    font-size: 10px;
+    color: #9b27b0;
+    opacity: 1; /* Muestra el label */
+  }
+  
+  .input-container input:focus {
+    border-color: #9b27b0; /* Cambia el borde cuando está enfocado */
+  }
+
+  .forgot-password {
+    font-size: 14px;
+    color: #9b27b0;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 30px; /* Agrega margen inferior para el espacio deseado */
 }
-
-
-/* Estilos para el botón de iniciar sesión */
-.boton-registrarse,
-.boton-iniciar-sesion {
-    display: inline-block;
-    padding: 12px 20px; /* Ajusta el relleno del botón */
+  
+.btn-login {
+    width: 80%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0 5px; /* Ajusta el margen superior para crear espacio */
+  }
+  
+  
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .redes-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin: 5px 0;
+  }
+  
+  .fb {
+    background-color: #3b5998;
+  }
+  
+  .google {
+    background-color: #db4437;
+  }
+  
+  .redes-btn i {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  
+  .new-user {
+    font-size: 14px;
     margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.boton-iniciar-sesion:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
-}
-
-.crear-cuenta{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.d-flex{
-    margin-top: 0px;
-}
-
+  }
+  
+  .new-user a {
+    color: #9b27b0;
+    text-decoration: none;
+  }
+  
