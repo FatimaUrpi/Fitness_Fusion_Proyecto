@@ -17,39 +17,43 @@
     <hr>
     <i class="fas fa-user-circle logo"></i>
     <p class="subtitle">¡Bienvenido a Fitness Fusion!</p>
-    <p>Ingresa tu usuario y contraseña para iniciar sesión</p>
+    <p>Ingresa tu correo y contraseña para iniciar sesión</p>
 
     <div class="input-container">
-      <input type="text" id="correo" placeholder="Correo*" required onfocus="togglePlaceholder(this, true)" onblur="togglePlaceholder(this, false)">
+      <input type="text" id="correo" placeholder="Ingrese su correo" required>
       <label for="correo">Correo*</label>
-    </div>
-    
-    <div class="input-container">
-      <input type="password" id="contraseña" placeholder="Contraseña*" required onfocus="togglePlaceholder(this, true)" onblur="togglePlaceholder(this, false)">
+      <span class="error-message" id="error-correo"></span>
+  </div>
+  
+  <div class="input-container">
+      <input type="password" id="contraseña" placeholder="Ingrese su contraseña" required>
       <label for="contraseña">Contraseña*</label>
+      <span class="error-message" id="error-contraseña"></span>
       <span class="toggle-password" onclick="togglePasswordVisibility()">
-        <i class="fas fa-eye"></i>
+          <i class="fas fa-eye"></i>
       </span>
-    </div>
+  </div>
+  
 
     <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
     
-    <button class="btn-login" onclick="window.location.href='Index.html'">Iniciar sesión</button>
+    <button class="btn-login" onclick="iniciarSesion()">Iniciar sesión</button>
 
-    
     <div class="redes">
-        <button class="fb redes-btn" onclick="window.location.href='https://www.facebook.com/?locale=es_LA'" title="Continuar con Facebook">
-            <i class="fab fa-facebook"></i><span>  Continuar con Facebook</span>
-        </button>
-        <button class="google redes-btn" onclick="window.location.href='https://www.google.com/intl/es-419/gmail/about/'" title="Continuar con Google">
-            <i class="fab fa-google"></i><span>  Continuar con Google</span>
-        </button>
+      <button class="fb redes-btn" onclick="window.location.href='https://www.facebook.com/?locale=es_LA'" title="Continuar con Facebook">
+        <i class="fab fa-facebook"></i><span> Continuar con Facebook</span>
+      </button>
+      <button class="google redes-btn" onclick="window.location.href='https://www.google.com/intl/es-419/gmail/about/'" title="Continuar con Google">
+        <i class="fab fa-google"></i><span> Continuar con Google</span>
+      </button>
     </div>
 
     <p class="new-user">¿Eres nuevo en Fitness Fusion?</p>
     <p class="new-user"><a href="registrarse.html">Crear cuenta</a></p>
   </div>
 
-  <script src="js/iniciarSesion.js"></script>
+  <script src="JS/Sesion/inciarSesion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>

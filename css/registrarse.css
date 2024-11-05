@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+
+.register-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+p{
+    color: #545151;
+    font-size: 15px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .back-btn {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 19px;
+    margin: 0;
+    padding: 5px 10px;
+    color: #545151;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #d3d3d3;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 80px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+.subtitle {
+  color: #9b27b0;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.input-container {
+    position: relative;
+    margin: 1.5rem 0;
+  }
+
+  .input-container input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.95rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    font-size: 0.85rem;
+    background-color: #ffffff;
+    padding: 0 0.25rem;
+    color: #666;
+    opacity: 1;
+    transition: 0.3s ease all;
+  }
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: #9b27b0;
+  opacity: 1;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+  }
+
+.btn-register {
+    width: 80%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0 5px;
+}
+
+.existing-user {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.existing-user a {
+    color: #9b27b0;
+    text-decoration: none;
+}
