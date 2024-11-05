@@ -1,203 +1,192 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f5f5f5;
-  }
-  
-  .login-container {
-    max-width: 350px;
-    width: 90%;
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Header with back button */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .back-btn {
-    position: absolute;
-    left: 0;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  h1 {
-    font-size: 19px;
-    margin: 0;
-    padding: 5px 10px;
-    color: #545151;
-  }
-  
-  hr {
-    border: none;
-    border-top: 1px solid #d3d3d3;
-    margin: 10px 0;
-    width: 100%;
-  }
-  
-  .logo {
-    font-size: 80px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .subtitle {
-    color: #9b27b0;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .input-container {
-    position: relative;
-    margin: 1.5rem 0;
-  }
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
 
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header with back button */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 19px;
+  margin: 0;
+  padding: 5px 10px;
+  color: #545151;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d3d3d3;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.logo {
+  font-size: 80px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #9b27b0;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 1.5rem 0;
+}
 
 .input-container input {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .input-container label {
-    position: absolute;
-    top: -0.8rem;
-    left: 1rem;
-    font-size: 0.85rem;
-    background-color: #ffffff;
-    padding: 0 0.25rem;
-    color: #666;
-  }
-  
-  .toggle-password {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #666;
-  }
-  
-  .input-container input[type="text"],
-  .input-container input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    outline: none;
-    margin: 2px 0;
-  }
-
-  .input-container label {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    font-size: 12px;
-    color: #aaa;
-    pointer-events: none;
-    opacity: 0; /* Oculto inicialmente */
-    transition: 0.3s ease all;
-    background: white; /* Fondo blanco para que quede encima del borde */
-    padding: 0 4px;
-  }
-
-/* Efecto cuando el input está enfocado */
-.input-container input:focus + label {
-    top: -10px; /* Ajusta la posición del label encima del borde */
-    font-size: 10px;
-    color: #9b27b0;
-    opacity: 1; /* Muestra el label */
-  }
-  
-  .input-container input:focus {
-    border-color: #9b27b0; /* Cambia el borde cuando está enfocado */
-  }
-
-  .forgot-password {
-    font-size: 14px;
-    color: #9b27b0;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 30px; /* Agrega margen inferior para el espacio deseado */
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
-  
+
+.input-container label {
+  position: absolute;
+  top: -0.8rem;
+  left: 1rem;
+  font-size: 0.85rem;
+  background-color: #ffffff;
+  padding: 0 0.25rem;
+  color: #666;
+  opacity: 1;
+  transition: 0.3s ease all;
+}
+
+/* Focus and filled input effects */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: #9b27b0;
+  opacity: 1;
+}
+
+.input-container input:focus {
+  border-color: #9b27b0;
+}
+
+/* Toggle password */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+/* Forgot password link */
+.forgot-password {
+  font-size: 14px;
+  color: #9b27b0;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Login button */
 .btn-login {
-    width: 80%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 20px 0 5px; /* Ajusta el margen superior para crear espacio */
-  }
-  
-  
-  .redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .redes-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    padding: 10px;
-    font-size: 16px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px 0;
-  }
-  
-  .fb {
-    background-color: #3b5998;
-  }
-  
-  .google {
-    background-color: #db4437;
-  }
-  
-  .redes-btn i {
-    margin-right: 8px;
-    font-size: 20px;
-  }
-  
-  .new-user {
-    font-size: 14px;
-    margin-top: 20px;
-  }
-  
-  .new-user a {
-    color: #9b27b0;
-    text-decoration: none;
-  }
-  
+  width: 80%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 0 5px;
+}
+
+/* Social media buttons */
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.redes-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.fb {
+  background-color: #3b5998;
+}
+
+.google {
+  background-color: #db4437;
+}
+
+.redes-btn i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* New user link */
+.new-user {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.new-user a {
+  color: #9b27b0;
+  text-decoration: none;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 12px;
+  display: none; /* Se oculta hasta que sea necesario mostrarlo */
+  margin-top: 5px;
+}
