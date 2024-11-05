@@ -45,6 +45,18 @@ header nav{
     width: 100%;
     margin-bottom: 80px;
 }
+nav {
+    display: flex; /* Convertir los elementos en un contenedor flexible */
+    flex-direction: row; /* Opcional: mostrar elementos en fila (valor por defecto) */
+    justify-content: space-around; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
 nav a {
     color: black;
     display: inline-block;

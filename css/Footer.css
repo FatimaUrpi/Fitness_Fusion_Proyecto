@@ -1,22 +1,21 @@
-/*FOOTER*/
 footer {
-
-    height: 380px;
-    margin-top: 3%;
     background-color: black;
     color: white;
     padding: 30px;
+    margin-top: 3%;
 }
 
 .footer-columns {
     display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas más pequeñas */
+    justify-content: space-between; /* Espacio entre columnas */
 }
 
 .footer-column {
-    margin-right: 40px;
     flex: 1;
+    min-width: 250px; /* Ancho mínimo para columnas */
+    margin-right: 40px;
 }
-/*Fatimasssssss*/
 
 .footer-column h4 {
     text-align: left;
@@ -24,16 +23,25 @@ footer {
     margin-bottom: 10px; 
 }
 
+.footer-column ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0; /* Quitar padding por defecto */
+}
+
+.footer-column li {
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
 .social-icons {
     display: flex;
-    gap: 1.8rem;
-    cursor: pointer;
+    gap: 1rem; /* Espacio entre iconos */
+    margin-top: 15px; /* Espacio encima de los iconos */
 }
 
 .social-icons span {
-    border-radius: 45%;
-    width: 3rem;
-    height: 3rem;
+    border-radius: 50%; /* Redondear los iconos */
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,57 +49,18 @@ footer {
 
 .social-icons span i {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Tamaño del icono */
 }
 
-.facebook {
-    background-color: #3b5998;
-}
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #00acee; }
+.youtube { background-color: #c4302b; }
+.pinterest { background-color: #c8232c; }
+.instagram { background: linear-gradient(#405de6, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #fcaf45); }
 
-.twitter {
-    background-color: #00acee;
-}
-
-.youtube {
-    background-color: #c4302b;
-}
-
-.pinterest {
-    background-color: #c8232c;
-}
-
-.instagram {
-    background: linear-gradient(
-        #405de6,
-        #833ab4,
-        #c13584,
-        #e1306c,
-        #fd1d1d,
-        #f56040,
-        #fcaf45
-    );
-}
-
-/* Ajustes de estilo para el copyright dentro del footer */
-.footer-content {
-   margin: 20px;
-}
-
-.footer-content .copyright {
-
-    position: absolute;
-    text-align: center;
-    bottom: 20;
-    left: 0;
-   /* width:214ch;*/
-    width: 97%;
-
+.copyright {
     border-top: 1px solid #d2b495;
+    text-align: center;
+    padding: 20px 0 0 0;
     margin-top: 20px;
-    margin-left: 30px;
-}
-
-.footer-content .copyright p {
-    font-weight: 400;
-    font-size: 1.2rem; 
 }
