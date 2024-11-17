@@ -1,0 +1,72 @@
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Cuenta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/olvidarContrasena.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="Index.html" class="back-btn"></a>
+            <h1>¿Olvidaste tu contraseña?</h1>
+        </div>
+        <hr>
+        <i class="fas fa-user-lock logo"></i>
+            <h2>Recuperar cuenta</h2>
+            <p>Ingresa tu correo para buscar tu cuenta de Fitness Fusion.</p>
+            <div class="input-container">
+                <input type="email" id="correo" placeholder="Ingrese su correo" required>
+                <label for="correo">Correo*</label>
+                <span class="error-message" id="error-correo"></span>
+            </div>
+            <button class="btn-register" onclick="buscarCuenta()"><i class="fa-solid fa-magnifying-glass"></i> Buscar cuenta</button>
+            <p class="existing-user"><a href="iniciarSesion.html">Iniciar sesión</a></p>
+        </div>
+    </div>
+    
+    <script src="JS/Sesion/olvidarContrasena.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualizar Contraseña</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Cambiar Contraseña</h1>
+    <input type="password" id="nuevaContrasena" placeholder="Nueva contraseña" required>
+    <button onclick="actualizarContrasena()">Actualizar contraseña</button>
+  </div>
+
+  <script>
+    async function actualizarContrasena() {
+      const nuevaContrasena = document.getElementById('nuevaContrasena').value;
+
+      // Suponiendo que ya has verificado el correo y ahora deseas actualizar la contraseña en el backend
+      const response = await fetch('/actualizar-contrasena', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ nuevaContrasena })
+      });
+
+      const data = await response.json();
+
+      if (data.exito) {
+        alert('Contraseña actualizada correctamente');
+      } else {
+        alert('Hubo un error al actualizar la contraseña');
+      }
+    }
+  </script>
+</body>
+</html>

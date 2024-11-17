@@ -1,140 +1,179 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f5f5f5;
-  }
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f6f9; /* Fondo claro y profesional */
+}
 
 .register-container {
-    max-width: 400px;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #e0e0e0; /* Borde sutil */
+  border-radius: 8px;
 }
-p{
-    color: #545151;
-    font-size: 15px;
-}
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .back-btn {
-    position: absolute;
-    left: 0;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  h1 {
-    font-size: 19px;
-    margin: 0;
-    padding: 5px 10px;
-    color: #545151;
-  }
-  
-  hr {
-    border: none;
-    border-top: 1px solid #d3d3d3;
-    margin: 10px 0;
-    width: 100%;
-  }
 
-  .logo {
-    font-size: 80px;
-    color: #333;
-    margin-bottom: 20px;
-  }
+p {
+  color: #666; /* Texto claro para un buen contraste */
+  font-size: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #007bff; /* Color primario para interacción */
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  padding: 5px 10px;
+  color: #333; /* Título oscuro y claro */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d3d3d3;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.logo {
+  font-size: 80px;
+  color: #007bff; /* Color de marca */
+  margin-bottom: 20px;
+}
 
 .subtitle {
-  color: #9b27b0;
+  color: #0069d9; /* Un tono azul más suave */
   font-weight: bold;
   margin: 10px 0;
 }
 
 .input-container {
-    position: relative;
-    margin: 1.5rem 0;
-  }
+  position: relative;
+  margin: 1.5rem 0;
+}
 
-  .input-container input {
-    width: 100%;
-    padding: 1rem;
-    font-size: 0.95rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .input-container label {
-    position: absolute;
-    top: -0.8rem;
-    left: 1rem;
-    font-size: 0.85rem;
-    background-color: #ffffff;
-    padding: 0 0.25rem;
-    color: #666;
-    opacity: 1;
-    transition: 0.3s ease all;
-  }
+.input-container input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-container input:focus {
+  border-color: #007bff; /* Borde azul en el enfoque */
+  outline: none;
+}
+
+.input-container label {
+  position: absolute;
+  top: -0.8rem;
+  left: 1rem;
+  font-size: 0.85rem;
+  background-color: #fff;
+  padding: 0 0.25rem;
+  color: #666;
+  opacity: 1;
+  transition: 0.3s ease all;
+}
 
 .input-container input:focus + label,
 .input-container input:not(:placeholder-shown) + label {
   top: -10px;
   font-size: 12px;
-  color: #9b27b0;
+  color: #007bff;
   opacity: 1;
 }
 
-.error-message {
-    color: red;
-    font-size: 12px;
-    display: none;
-}
+
 
 .toggle-password {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #666;
-  }
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #007bff;
+}
 
 .btn-register {
-    width: 80%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 20px 0 5px;
+  width: 80%;
+  padding: 10px;
+  background-color: #28a745; /* Verde más suave para el botón */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #218838; /* Cambio de color suave al pasar el mouse */
 }
 
 .existing-user {
-    font-size: 14px;
-    margin-top: 20px;
+  font-size: 14px;
+  margin-top: 20px;
 }
 
 .existing-user a {
-    color: #9b27b0;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+.existing-user a:hover {
+  color: #0056b3; /* Color de enlace con un tono más oscuro */
+}
+
+
+
+#error-nombre{
+  color: #e74c3c;
+
+}
+#error-apellido{
+  color: #e74c3c;
+
+}
+
+#error-telefono{
+  color: #e74c3c;
+
+}
+#error-correo{
+  color: #e74c3c;
+
+}
+
+#error-contraseña{
+  color: #e74c3c;
+
+}
+

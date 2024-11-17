@@ -1,138 +1,336 @@
+/* General page styles */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f5f5f5;
-  }
-
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
 
 .container {
-    max-width: 370px;
-    width: 190%;
-    padding: 15px;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .back-btn {
-    position: absolute;
-    left: 0;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: #333;
-    text-decoration: none;
-  }
-  hr {
-    border: none;
-    border-top: 1px solid #d3d3d3;
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 19px;
-    margin: 0;
-    padding: 5px 10px;
-    color: #545151;
-  }
-h2 {
-    font-size: 20px;
-    color: #800080;
-    margin-bottom: 10px;
+/* Header section styles */
+header h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #007bff;
 }
 
-p {
-    color: #545151;
-    font-size: 15px;
-}
-.btn-register {
-    width: 80%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;    
-}
-.logo {
-    font-size: 60px;
-    color: #333;
-  }
-.input-container {
-    position: relative;
-    margin: 1.5rem 0;
-  }
-
-  .input-container input {
-    width: 100%;
-    padding: 1rem;
-    font-size: 0.95rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .input-container label {
-    position: absolute;
-    top: -0.8rem;
-    left: 1rem;
-    font-size: 0.85rem;
-    background-color: #ffffff;
-    padding: 0 0.25rem;
-    color: #666;
-    opacity: 1;
-    transition: 0.3s ease all;
-  }
-
-.input-container input:focus + label,
-.input-container input:not(:placeholder-shown) + label {
-  top: -10px;
-  font-size: 12px;
-  color: #9b27b0;
-  opacity: 1;
+header p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
 }
 
+/* Input fields styles */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Password container and icon styles */
+.password-container {
+  position: relative;
+}
+
+.password-container i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+}
+
+/* Error messages */
 .error-message {
-    color: red;
-    font-size: 12px;
-    display: none;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none; /* Hidden by default */
+}
+
+/* Instructions for password validation */
+#instrucciones-contrasena {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #666;
+}
+
+#instrucciones-contrasena li {
+  margin-bottom: 5px;
+}
+
+#instrucciones-contrasena li.valid {
+  color: green;
+}
+
+#instrucciones-contrasena li.invalid {
+  color: red;
+}
+
+/* Estilo del botón de envío */
+button[type="submit"] {
+  display: block;
+  width: 200px;  /* Tamaño fijo para el botón */
+  padding: 10px 20px;  /* Ajuste del padding para hacerlo más pequeño */
+  background-color: #1783f7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px auto 0;  /* Centramos el botón */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-a {
-    display: block;
-    margin-top: 15px;
-    font-size: 14px;
-    color: #800080;
-    text-decoration: none;
+
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
-a:hover {
-    text-decoration: underline;
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(173, 16, 16, 0.1);
 }
 
-.existing-user {
-    font-size: 14px;
-    margin-top: 20px;
+/* Header section styles */
+header h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
-.existing-user a {
-    color: #9b27b0;
-    text-decoration: none;
+header p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Input fields styles */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Password container and icon styles */
+.password-container {
+  position: relative;
+}
+
+.password-container i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+}
+
+/* Error messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none; /* Hidden by default */
+  text-align: center;
+}
+
+/* Estilo general para la lista de instrucciones de la contraseña */
+#instrucciones-contrasena {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+  font-family: 'Arial', sans-serif; /* Usar una fuente más profesional */
+}
+
+/*pendiente*/
+#instrucciones-contrasena li {
+  border: 1px solid #aca7a7ab;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  padding-left: 100px;
+
+}
+
+
+#instrucciones-contrasena li.valid {
+  color: green;
+  background-color: #e7f5ff;
+
+
+}
+
+#instrucciones-contrasena li.invalid {
+  color: red;
+
+}
+
+
+
+button[type="submit"]:hover {
+  background-color: #0066cc;  /* Azul más brillante para el hover */
+  transform: translateY(-2px);  /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Soft shadow on hover */
+}
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .container {
+      padding: 15px;
+      
+  }
+
+  header h1 {
+      font-size: 22px;
+  }
+
+  header p {
+      font-size: 14px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+      padding: 12px;
+      
+  }
+
+  button[type="submit"] {
+      padding: 12px;
+  }
+}
+
+/* Mantener el tamaño del campo consistente al cambiar el tipo de input */
+.password-container input {
+  width: 100%;  /* El campo ocupa todo el ancho disponible */
+  padding-right: 40px;  /* Espacio suficiente para el ícono del ojo */
+  box-sizing: border-box;  /* Asegura que el padding no afecte el tamaño del campo */
+}
+
+/* El ícono se posiciona dentro del campo sin cambiar su tamaño */
+.password-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+  
+}
+
+/* Estilos consistentes para el input de tipo password y text */
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  /* Aquí no se cambian los estilos al cambiar de tipo */
+}
+/* CSS: Agregar la clase hidden para ocultar la lista por defecto */
+.hidden {
+  display: none;
+}
+
+.password-container i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #007BFF; /* Azul para el ícono */
+  cursor: pointer;
+}
+
+/**/
+.logo {
+  font-size: 80px;
+  color: #007bff; /* Color de marca */
+  margin-bottom: 20px;
+}
+
+
+/* Estilos para los campos de entrada de texto y contraseña */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Suavizar la transición del borde */
+}
+
+/* Efecto al seleccionar el campo (focus) */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #0066cc; /* Cambia el borde a azul brillante cuando se selecciona */
+  outline: none; /* Elimina el borde predeterminado al enfocar */
+}
+
+/* Efecto de hover sobre los campos de texto (email y password) */
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #0066cc; /* Azul brillante en hover */
+}
+
+header i {
+  font-size: 18px;
+  color: #007bff;  /* Azul */
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.3s, transform 0.3s;  /* Transición para el color y el efecto de transformación */
+}
+
+header i:hover {
+  color: #0056b3;  /* Azul más oscuro al pasar el cursor */
+  transform: scale(1.1);  /* Efecto de agrandamiento al tocar */
 }

@@ -3,31 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperar Cuenta</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Recuperar Contraseña</title>
     <link rel="stylesheet" href="css/olvidarContrasena.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <a href="Index.html" class="back-btn"></a>
-            <h1>¿Olvidaste tu contraseña?</h1>
-        </div>
-        <hr>
-        <i class="fas fa-user-lock logo"></i>
-            <h2>Recuperar cuenta</h2>
-            <p>Ingresa tu correo para buscar tu cuenta de Fitness Fusion.</p>
-            <div class="input-container">
-                <input type="email" id="correo" placeholder="Ingrese su correo" required>
-                <label for="correo">Correo*</label>
-                <span class="error-message" id="error-correo"></span>
+        <header>
+            <!-- Ícono de retroceso -->
+            <i class="fa fa-arrow-left" id="back-btn" onclick="window.history.back();"></i>
+            <h1>Recuperar Contraseña</h1>
+            <p>Por favor, ingresa tu correo y nueva contraseña.</p>
+        </header>
+        
+        <form id="form-recuperar" onsubmit="event.preventDefault(); actualizarContrasena();">
+            <input type="email" id="correo" placeholder="Correo electrónico" oninput="validarCorreo()" required>
+            <p id="error-correo" class="error-message"></p>
+            
+            <div class="password-container">
+                <input type="password" id="nuevaContrasena" placeholder="Nueva contraseña" oninput="validarContrasena()" required>
+                <i class="fa fa-eye" id="toggle-password" onclick="togglePasswordVisibility('nuevaContrasena', 'toggle-password')"></i>
+                <p id="error-contrasena" class="error-message"></p>
+                <ul id="instrucciones-contrasena" class="hidden">
+                  <li id="longitud">Al menos 8 caracteres</li>
+                  <li id="mayuscula">Debe contener una letra mayúscula</li>
+                  <li id="minuscula">Debe contener una letra minúscula</li>
+                  <li id="numero">Debe contener un número</li>
+              </ul>
             </div>
-            <button class="btn-register" onclick="buscarCuenta()"><i class="fa-solid fa-magnifying-glass"></i> Buscar cuenta</button>
-            <p class="existing-user"><a href="iniciarSesion.html">Iniciar sesión</a></p>
-        </div>
+
+            <div class="password-container">
+                <input type="password" id="confirmarContrasena" placeholder="Confirmar contraseña" oninput="validarConfirmarContrasena()" required>
+                <i class="fa fa-eye" id="toggle-confirmar" onclick="togglePasswordVisibility('confirmarContrasena', 'toggle-confirmar')"></i>
+                <p id="error-confirmar" class="error-message"></p>
+            </div>
+
+            <button type="submit" class="btn-register">Actualizar contraseña</button>
+        </form>
     </div>
-    
-    <script src="JS/Sesion/olvidarContrasena.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/Sesion/olvidarContrasena.js"></script>
 </body>
 </html>

@@ -1,0 +1,120 @@
+/* General Reset */
+body, h1, p, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container Styling */
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+.container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.container input[type="email"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error Messages */
+.error-message {
+  font-size: 0.8rem;
+  color: red;
+  margin-bottom: 10px;
+  display: none; /* Hidden by default */
+}
+/* Contenedor de los botones */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los botones */
+  gap: 15px; /* Espacio entre los botones, puedes reducirlo si quieres menos espacio */
+  margin-top: 20px; /* Espacio desde los inputs hasta los botones */
+}
+
+/* Estilo general de los botones */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo del botón de actualizar */
+.btn-register {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-register:hover {
+  background-color: #45a049;
+}
+/* Estilo para el botón de retroceso */
+.header {
+  display: flex;
+  align-items: center; /* Alinea la flecha y el texto verticalmente */
+  justify-content: flex-start; /* Alinea todo al inicio (izquierda) */
+  gap: 10px; /* Espacio entre la flecha y el texto */
+}
+
+.header .back-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff; /* Color azul para la flecha */
+  font-size: 24px; /* Tamaño de la flecha */
+  margin: 0; /* Elimina el margen del botón */
+  cursor: pointer;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin: 0; /* Elimina el margen del título */
+  text-align: center; /* Centra solo el título */
+  flex-grow: 1; /* Hace que el título ocupe el espacio restante */
+}

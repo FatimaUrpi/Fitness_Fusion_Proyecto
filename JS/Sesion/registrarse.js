@@ -17,7 +17,6 @@ function togglePasswordVisibility() {
 // Validación de campos
 document.getElementById("nombre").addEventListener("input", validarNombre);
 document.getElementById("apellido").addEventListener("input", validarApellido);
-document.getElementById("dni").addEventListener("input", validarDNI);
 document.getElementById("telefono").addEventListener("input", validarTelefono);
 document.getElementById("correo").addEventListener("input", validarCorreo);
 document.getElementById("contraseña").addEventListener("input", validarContraseña);
@@ -56,22 +55,7 @@ function validarApellido() {
     }
 }
 
-function validarDNI() {
-    const dni = document.getElementById("dni").value.trim();
-    const errorDNI = document.getElementById("error-dni");
-    const dniRegex = /^\d{8}$/; // Exactamente 8 dígitos
-    
-    if (!dni) {
-        errorDNI.style.display = "block";
-        errorDNI.textContent = "Por favor, ingrese su DNI.";
-    } else if (!dniRegex.test(dni)) {
-        errorDNI.style.display = "block";
-        errorDNI.textContent = "El DNI debe tener exactamente 8 dígitos.";
-    } else {
-        errorDNI.style.display = "none";
-        errorDNI.textContent = "";
-    }
-}
+
 
 function validarTelefono() {
     const telefono = document.getElementById("telefono").value.trim();
@@ -124,7 +108,6 @@ function validarContraseña() {
 function registrar() {
     const nombre = document.getElementById("nombre").value.trim();
     const apellido = document.getElementById("apellido").value.trim();
-    const dni = document.getElementById("dni").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
     const correo = document.getElementById("correo").value.trim();
     const contraseña = document.getElementById("contraseña").value.trim();
@@ -132,35 +115,70 @@ function registrar() {
     // Validación de campos
     validarNombre();
     validarApellido();
-    validarDNI();
     validarTelefono();
     validarCorreo();
     validarContraseña();
 
     const errorNombre = document.getElementById("error-nombre");
     const errorApellido = document.getElementById("error-apellido");
-    const errorDNI = document.getElementById("error-dni");
     const errorTelefono = document.getElementById("error-telefono");
     const errorCorreo = document.getElementById("error-correo");
     const errorContraseña = document.getElementById("error-contraseña");
 
     // Verifica que no haya mensajes de error visibles antes de continuar
-    if (errorNombre.style.display === "none" && 
-        errorApellido.style.display === "none" && 
-        errorDNI.style.display === "none" && 
-        errorTelefono.style.display === "none" && 
-        errorCorreo.style.display === "none" && 
-        errorContraseña.style.display === "none") {
+    if (
+        errorNombre.style.display === "none" &&
+        errorApellido.style.display === "none" &&
+        errorTelefono.style.display === "none" &&
+        errorCorreo.style.display === "none" &&
+        errorContraseña.style.display === "none"
+    ) {
+        // Datos a enviar al backend
+        const userData = {
+            nombre: nombre,
+            apellido: apellido,
+            telefono: telefono,
+            correo: correo,
+            contraseña: contraseña
+        };
 
-        // Alerta de éxito con SweetAlert
-        Swal.fire({
-            icon: 'success',
-            title: '¡Registro exitoso!',
-            text: 'Bienvenido a Fitness Fusion',
-            confirmButtonText: 'Continuar'
-        }).then(() => {
-            // Redirige a la página de inicio o a otra página
-            window.location.href = 'Index.html';
+        // Enviar datos al backend con Fetch
+        fetch("http://localhost:4000/registrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(userData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.message) {
+                // Alerta de éxito con SweetAlert
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Registro exitoso!',
+                    text: data.message,
+                    confirmButtonText: 'Continuar'
+                }).then(() => {
+                    // Redirige a la página de inicio o a otra página
+                    window.location.href = 'iniciarSesion.html';
+                });
+            } else {
+                // Mostrar error si algo sale mal
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Hubo un problema con el registro.'
+                });
+            }
+        })
+        .catch(error => {
+            console.error("Error al registrar:", error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Hubo un problema con el registro.'
+            });
         });
     }
 }

@@ -1,0 +1,109 @@
+/*document.getElementById("correo").addEventListener("input", validarCorreo);
+
+function validarCorreo() {
+    const correo = document.getElementById("correo").value.trim();
+    const errorCorreo = document.getElementById("error-correo");
+
+    if (!correo) {
+        errorCorreo.textContent = "Por favor, ingrese su correo.";
+        errorCorreo.style.display = "block";
+    } else if (!correo.includes("@")) {
+        errorCorreo.textContent = "Formato de correo incorrecto.";
+        errorCorreo.style.display = "block";
+    } else {
+        errorCorreo.style.display = "none"; // Oculta el mensaje si es válido
+    }
+}
+
+function buscarCuenta() {
+    const correo = document.getElementById("correo").value.trim();
+    
+    validarCorreo(); // Llama a validarCorreo para mostrar cualquier mensaje de error
+    const errorCorreo = document.getElementById("error-correo");
+
+    // Verifica que no haya mensajes de error visibles antes de continuar
+    if (errorCorreo.style.display === "none") {
+        // Alerta de éxito con SweetAlert
+        Swal.fire({
+            icon: 'success',
+            title: '¡Correo enviado!',
+            text: 'Revisa tu bandeja de entrada para restablecer tu contraseña.',
+            confirmButtonText: 'Continuar'
+        }).then(() => {
+            window.location.href = 'iniciarSesion.html';
+        });
+    }
+}*/
+// Validación del correo
+// Validación del correo
+// Función para verificar si el correo existe en el servidor y actualizar la contraseña
+async function actualizarContrasena() {
+    const correo = document.getElementById('correo').value.trim();
+    const nuevaContrasena = document.getElementById('nuevaContrasena').value.trim();
+    const confirmarContrasena = document.getElementById('confirmarContrasena').value.trim();
+    const errorCorreo = document.getElementById('error-correo');
+    const errorContrasena = document.getElementById('error-contrasena');
+    const errorConfirmar = document.getElementById('error-confirmar');
+
+    // Limpiar errores previos
+    errorCorreo.style.display = 'none';
+    errorContrasena.style.display = 'none';
+    errorConfirmar.style.display = 'none';
+
+    // Validaciones
+    if (!correo) {
+        errorCorreo.textContent = 'El correo es obligatorio.';
+        errorCorreo.style.display = 'block';
+        return;
+    }
+
+    if (!nuevaContrasena) {
+        errorContrasena.textContent = 'La nueva contraseña es obligatoria.';
+        errorContrasena.style.display = 'block';
+        return;
+    }
+
+    if (nuevaContrasena !== confirmarContrasena) {
+        errorConfirmar.textContent = 'Las contraseñas no coinciden.';
+        errorConfirmar.style.display = 'block';
+        return;
+    }
+
+    // Enviar datos al servidor
+    try {
+        const response = await fetch('http://localhost:4000/actualizarContrasena', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ correo, nuevaContrasena }),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            Swal.fire({
+                icon: 'success',
+                title: '¡Contraseña actualizada!',
+                text: 'Tu contraseña se actualizó correctamente.',
+                confirmButtonText: 'Continuar',
+            }).then(() => {
+                // Redirigir a la página de inicio de sesión
+                window.location.href = 'iniciarSesion.html';
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: result.message || 'No se pudo actualizar la contraseña.',
+            });
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Error interno del servidor.',
+        });
+    }
+}
