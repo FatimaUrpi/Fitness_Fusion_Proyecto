@@ -11,7 +11,7 @@
 
     <div class="register-container">
         <div class="header">
-            <a href="Index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+            <a href="iniciarSesion.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
             <h1>Crear cuenta</h1>
         </div>
         <hr>
@@ -22,37 +22,37 @@
         <div class="input-container">
             <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
             <label for="nombre">Nombre*</label>
-            <span class="error-message" id="error-nombre"></span>
+            <span id="error-nombre" style="display:none;"></span>
         </div>
 
         <div class="input-container">
             <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
             <label for="apellido">Apellido*</label>
-            <span class="error-message" id="error-apellido"></span>
+            <span id="error-apellido" style="display:none;"></span>
         </div>
 
-        <div class="input-container">
+       <!-- <div class="input-container">
             <input type="text" id="dni" placeholder="Ingrese su DNI" required>
             <label for="dni">DNI*</label>
             <span class="error-message" id="error-dni"></span>
-        </div>
+        </div>-->
 
         <div class="input-container">
             <input type="tel" id="telefono" placeholder="Ingrese su teléfono" required>
             <label for="telefono">Teléfono*</label>
-            <span class="error-message" id="error-telefono"></span>
+            <span id="error-telefono" style="display:none;"></span>
         </div>
 
         <div class="input-container">
             <input type="email" id="correo" placeholder="Ingrese su correo" required>
             <label for="correo">Correo*</label>
-            <span class="error-message" id="error-correo"></span>
+            <span id="error-correo" style="display:none;"></span>
         </div>
 
         <div class="input-container">
             <input type="password" id="contraseña" placeholder="Crea tu contraseña" required>
             <label for="contraseña">Contraseña*</label>
-            <span class="error-message" id="error-contraseña"></span>
+            <span id="error-contraseña" style="display:none;"></span>
             <span class="toggle-password" onclick="togglePasswordVisibility()">
                 <i class="fas fa-eye"></i>
             </span>

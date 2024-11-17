@@ -48,27 +48,51 @@ function validarContraseña() {
 }
 
 function iniciarSesion() {
-    const correo = document.getElementById("correo").value.trim();
-    const contraseña = document.getElementById("contraseña").value.trim();
+  const correo = document.getElementById("correo").value;
+  const contraseña = document.getElementById("contraseña").value;
 
-    validarCorreo();
-    validarContraseña();
+  if (!correo || !contraseña) {
+      Swal.fire({
+          icon: 'error',
+          title: '¡Error!',
+          text: 'Por favor, complete todos los campos.',
+      });
+      return;
+  }
 
-    const errorCorreo = document.getElementById("error-correo");
-    const errorContraseña = document.getElementById("error-contraseña");
+  const url = "http://localhost:4000/api/login";
 
-    // Verifica que no haya mensajes de error visibles antes de continuar
-    if (errorCorreo.style.display === "none" && errorContraseña.style.display === "none") {
-        // Alerta de éxito con SweetAlert
-        Swal.fire({
-            icon: 'success',
-            title: '¡Ingreso exitoso!',
-            text: 'Bienvenido a Fitness Fusion',
-            confirmButtonText: 'Continuar'
-        }).then(() => {
-            // Redirige a la página de inicio
-            window.location.href = 'Index.html';
-        });
-    }
+  // Send POST request with login data
+  fetch(url, {
+      method: "POST", // Changed from GET to POST
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+          correo: correo,
+          contraseña: contraseña
+      })
+  })
+  .then(response => response.json())
+  .then(data => {
+      if (data.message === "Acceso permitido.") {
+          // Successful login, handle next step (e.g., redirect)
+          window.location.href = 'index.html';
+        } else {
+          // Display error message
+          Swal.fire({
+              icon: 'error',
+              title: '¡Error!',
+              text: data.message,
+          });
+      }
+  })
+  .catch(error => {
+      console.error("Error al iniciar sesión:", error);
+      Swal.fire({
+          icon: 'error',
+          title: '¡Error!',
+          text: 'Hubo un problema al iniciar sesión.',
+      });
+  });
 }
-
